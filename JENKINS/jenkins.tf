@@ -105,7 +105,7 @@ resource "null_resource" "name" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("~/Downloads/devopskeypair.pem")
+    private_key = file("~/Downloads/terraform_kp.pem")
     host        = aws_instance.ec2_instance.public_ip
   }
 
